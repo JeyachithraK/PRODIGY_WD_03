@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #8B4513, #A0522D, #CD853F); /* Brown gradient */
+}
+
+html {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 50%;
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+    color: #d49e78; /* Brown */
+    position: absolute;
+    transform: translate(-50%, -120%);
+    font-size: 35px;
+    left: 50%;
+}
+
+.container {
+    width: 70.5vmin;
+    height: 65.0vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    /* border: 1px  brown; */
+    background-color: #8B4513; /* Brown */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-option {
+    background-color: #D2B48C; /* Tan */
+    height: 20.2vmin;
+    width: 22.15vmin;
+    border: none;
+    /* border: 5px; */
+    font-size: 12vmin;
+    color: #8B4513; /* Brown */
+    box-shadow: 0 0 15px rgba(221, 120, 43, 0.895);
+}
+
+#value {
+    margin-top: 35px;
+    font-size: 25px;
+    margin-bottom: 9px;
+    color: #7c431b; /* Brown */
+}
+
+#restart {
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: #5f2b06; /* Brown */
+    color: #ffffff;
+    border: none;
+    margin: 2.5em auto 0 auto;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup {
+    background: linear-gradient(to bottom, #8B4513, #CD853F); /* Brown gradient */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+    color: #D2691E; /* Brown */
+    border: 1px solid black;
+    font-size: 12vmin;
+}
+
+#new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #8B4513; /* Brown */
+    color: #e7b088; /* Brown */
+    font-weight: 500;
+    border-radius: 0.4em;
+    cursor: pointer;
+    border: none;
+}
+
+#new-game:hover {
+    transition: ease-in-out .2s;
+    background-color: #CD853F; /* Lighter brown */
+    color: #5f2b06;
+}
+
+#message {
+    color: #3e1b02; /* Brown */
+    font-weight: bolder;
+    text-align: center;
+    font-size: .8em;
+}
+
+.popup.hide {
+    display: none;
+}
